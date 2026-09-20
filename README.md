@@ -4,15 +4,6 @@ A front-end prototype for a clinical operations platform — a patient directory
 
 ![stack](https://img.shields.io/badge/stack-React%20%2B%20Vite%20%2B%20Tailwind-4C5FD1)
 
-## Highlights
-
-- **Normalized mock database** (`src/data/mockDatabase.js`) — five relational "tables" (`patients`, `encounters`, `vitals_history`, `medications`, `clinical_notes`) plus a `ward_inflow` trend table, generated deterministically with a seeded PRNG so the dataset (and every chart) is identical on every run.
-- **A real query layer** (`src/data/queries.js`) — filtering, sorting, pagination, joins, and aggregations written the way you'd write a repository/DAO over SQL, so components never touch the raw tables directly.
-- **"What Changed?"** — a delta engine that diffs a patient's two most recent vitals readings and classifies each change as an improvement, a stable reading, or a worsening trend with a severity tier.
-- **Clinical Analytics dashboard** — Recharts-powered admissions/discharge trend, triage breakdown donut, and ward occupancy bars.
-- **AI Clinical Scribe** — a slide-over/modal flow that simulates recording (animated waveform, timer), then produces a structured SOAP note the physician must review and sign before it's considered complete.
-- **Design system** — ultra-minimal, light theme: `slate-50` background, white cards, thin borders, small radii, a single muted-blue accent, no gradients or heavy shadows.
-
 ## Getting started
 
 ```bash
@@ -49,7 +40,3 @@ src/
     AnalyticsPage.jsx
     WardRoundsPage.jsx
 ```
-
-## Notes
-
-This is a front-end prototype: all data lives in memory and resets on reload. The query layer is deliberately written so that swapping it for real API calls (REST or GraphQL) would not require any changes in the component layer — every component reads through `src/data/queries.js`, never the raw tables.
