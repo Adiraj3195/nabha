@@ -15,7 +15,7 @@ import React, { createContext, useContext, useMemo, useState, useCallback } from
 const AppContext = createContext(null);
 
 export function AppProvider({ children }) {
-  const [activePage, setActivePage] = useState("dashboard"); // dashboard | directory | analytics | ward-rounds
+  const [activePage, setActivePage] = useState("dashboard"); // dashboard | directory | ward-rounds
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [selectedPatientId, setSelectedPatientId] = useState(null);
   const [scribeOpen, setScribeOpen] = useState(false);

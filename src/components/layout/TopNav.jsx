@@ -5,7 +5,6 @@ import { useApp } from "../../context/AppContext";
 const PAGE_TITLES = {
   dashboard: "Dashboard",
   directory: "Patient Directory",
-  analytics: "Analytics",
   "ward-rounds": "Ward Rounds",
 };
 

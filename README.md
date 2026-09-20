@@ -37,6 +37,5 @@ src/
   pages/
     DashboardPage.jsx
     PatientDirectoryPage.jsx
-    AnalyticsPage.jsx
     WardRoundsPage.jsx
 ```

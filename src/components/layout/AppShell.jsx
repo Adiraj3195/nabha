@@ -5,7 +5,6 @@ import { useApp } from "../../context/AppContext";
 
 import DashboardPage from "../../pages/DashboardPage";
 import PatientDirectoryPage from "../../pages/PatientDirectoryPage";
-import AnalyticsPage from "../../pages/AnalyticsPage";
 import WardRoundsPage from "../../pages/WardRoundsPage";
 import PatientDetailPanel from "../patients/PatientDetailPanel";
 import AIScribeModal from "../scribe/AIScribeModal";
@@ -13,7 +12,6 @@ import AIScribeModal from "../scribe/AIScribeModal";
 const PAGES = {
   dashboard: DashboardPage,
   directory: PatientDirectoryPage,
-  analytics: AnalyticsPage,
   "ward-rounds": WardRoundsPage,
 };
 

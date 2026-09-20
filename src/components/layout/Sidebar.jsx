@@ -1,13 +1,12 @@
 import React from "react";
 import {
-  LayoutGrid, Users, BarChart3, Stethoscope, ChevronsLeft, ChevronsRight, Plus,
+  LayoutGrid, Users, Stethoscope, ChevronsLeft, ChevronsRight, Plus,
 } from "lucide-react";
 import { useApp } from "../../context/AppContext";
 
 const NAV_ITEMS = [
   { key: "dashboard", label: "Dashboard", icon: LayoutGrid },
   { key: "directory", label: "Patient Directory", icon: Users },
-  { key: "analytics", label: "Analytics", icon: BarChart3 },
   { key: "ward-rounds", label: "Ward Rounds", icon: Stethoscope },
 ];
 
